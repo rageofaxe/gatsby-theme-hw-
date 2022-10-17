@@ -13,16 +13,16 @@ function Main() {
   return (
     <ThemeProvider theme={theme}>
       <Container variant="page">
-        <Flex variant="layout.menuHeader">
-          <Flex>Logo</Flex>
+        <Flex variant="layout.menuHeader" sx={{ position: 'static', width: '100%', background: 'background' }}>
+          <Flex>Logo1</Flex>
           <Flex variant="layout.menuHeaderItems">
-            <Link href="#">Main</Link>
-            <Link href="#">Projects</Link>
-            <Link href="#">Contacts</Link>
+            <Link href="#main">Main</Link>
+            <Link href="#projects">Projects</Link>
+            <Link href="#contatcs">Contacts</Link>
             <Link href="#">About</Link>
           </Flex>
         </Flex>
-        <Block>
+        <Block id="main">
           <Text variant="h1">
             I LOVE TO
             <br />
@@ -49,7 +49,7 @@ function Main() {
             </Animated>
           </Container>
         </Cols>
-        <Cols>
+        <Cols id="contatcs">
           <Container>
             <Animated>
               <H2 decorated>List</H2>
@@ -90,7 +90,8 @@ function Main() {
             </Animated>
           </Container>
         </Cols>
-        <Block striped>
+
+        <Block striped id="projects">
           <Animated>
             <H1 decorated>5. Hi There</H1>
             <br />

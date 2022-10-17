@@ -1,9 +1,8 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { createRoot } from 'react-dom/client';
-import './index.css';
-import App from './layouts/Main';
+import Main from './layouts/Main';
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
 
-root.render(<App />);
+root.render(<Main />);
